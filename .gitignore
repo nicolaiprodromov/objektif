@@ -1,0 +1,11 @@
+1/
+*.blend1
+
+hdri/timelapse_2k/
+objektif_local.blend
+
+__pycache__/
+*.pyc
+
+tests/renders/scratch/
+lab/scratch/
