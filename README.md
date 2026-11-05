@@ -1,4 +1,5 @@
-![objektif](docs/cvr.png)
+
+![objektif as a cine fisheye on a small camera; its screen shows a picture the lens made](docs/showcase.png)
 
 # objektif
 
@@ -83,6 +84,13 @@ those shots. Before each shot, the script reads the lens's own messages. It
 stops on any warning, or if the lens does not reach the Field of View it asked
 for.
 
+The camera picture near the top is built the same way, from the `showcase` folder:
+
+```
+blender -b --factory-startup -P build_showcase.py   # builds showcase.blend
+blender -b showcase.blend -P render_showcase.py     # renders ../docs/showcase.jpg
+```
+
 ## Credits
 
 - The demo scene's sky, [`hdri/htl_free_002.exr`](hdri/htl_free_002.exr), is a
@@ -92,3 +100,6 @@ for.
   It was downscaled to 2048 × 1024 and re-encoded (half float, DWAA).
 - *UV Map Grids* by Paco Salas, from
   [BlenderKit](https://www.blenderkit.com) (Royalty Free).
+
+
+![objektif](docs/cvr.png)
